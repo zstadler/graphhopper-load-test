@@ -1,4 +1,4 @@
-FROM python:3.7
+FROM python:3.10
 
 ENV PYTHONWARNINGS "ignore:Unverified HTTPS request"
 ENV PYTHONUNBUFFERED 1
