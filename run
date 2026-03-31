@@ -11,8 +11,8 @@ Options:
   -p <persona> --persona=<persona>         The persona to use. Possible values: vrp, route, route_invalid, isochrone.
   --custom-output                          Use custom results output that does not spam with intermediate results.
   --debug                                  Switch debugging for error requests.
-  --vrp-tomtom-probability <prob>          When doing VRP /optimize requests, what's the probability that an eligible requests (e.g. car) will use TomTom data [default: 0.2].
-  --vrp-profiles <profiles>                A comma-separated list of allowed profiles, e.g. car,truck,small_truck. Possible values: car, bike, foot, hike, mtb, racingbike, scooter, truck, small_truck. [default: car]
+  --vrp-tomtom-probability <prob>          When doing VRP /optimize requests, what's the probability that an eligible requests (e.g. hike) will use TomTom data [default: 0.2].
+  --vrp-profiles <profiles>                A comma-separated list of allowed profiles, e.g. car,truck,small_truck. Possible values: car, bike, foot, hike, mtb, racingbike, scooter, truck, small_truck. [default: hike]
   --points <points>                        A points query for matrix or routing, e.g. point=52.517429%2C13.389083&point=52.522018%2C13.386669.
   --num-points <num_points>                The number of points for matrix and routing queries. This setting is mutually exclusive with the --points option.
   --vrp-max-profiles <vrp_max_profiles>    The max of different VRP vehicle profiles to use. [default: 1]

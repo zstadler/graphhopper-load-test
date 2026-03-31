@@ -14,7 +14,7 @@ class PersonaTaskSet(TaskSet):
     @task
     def get_route(self):
         points = ["{:.2f}".format(random.uniform(20.0, 80.0)) for _ in range(4)]
-        path = f"/api/1/route?profile=car&point={points[0]}%2C{points[1]}&point={points[2]}%2C{points[3]}{self.api_key_url_suffix}"
+        path = f"/api/1/route?profile=hike&point={points[0]}%2C{points[1]}&point={points[2]}%2C{points[3]}{self.api_key_url_suffix}"
         self.client.get(path, name="Route erratic")
 
 

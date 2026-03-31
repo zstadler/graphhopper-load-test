@@ -81,7 +81,7 @@ def get_random_vehicles_and_types(max_profiles):
     vrp_tomtom_probability = float(os.environ["VRP_TOMTOM_PROBABILITY"]) if "VRP_TOMTOM_PROBABILITY" in os.environ else 0.2
     for i in range(max_profiles):
 
-        profiles = os.environ["VRP_PROFILES"].split(",") if "VRP_PROFILES" in os.environ else ["car"]
+        profiles = os.environ["VRP_PROFILES"].split(",") if "VRP_PROFILES" in os.environ else ["hike"]
 
         vehicle_type = {"type_id": "t{}".format(i), "profile": random.choice(profiles)}
         if random.random() < vrp_tomtom_probability and vehicle_type["profile"] not in [

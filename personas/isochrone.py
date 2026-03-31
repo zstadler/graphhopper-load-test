@@ -13,7 +13,7 @@ class PersonaTaskSet(TaskSet):
     @task
     def get_isochrone(self):
         points = ",".join(str(p) for p in common.get_random_berlin_point())
-        path = f"/api/1/isochrone?profile=car&point={points}{self.api_key_url_suffix}"
+        path = f"/api/1/isochrone?profile=hike&point={points}{self.api_key_url_suffix}"
         self.client.get(path, name="Isochrone")
 
 

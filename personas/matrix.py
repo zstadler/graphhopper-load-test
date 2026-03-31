@@ -24,7 +24,7 @@ class PersonaTaskSet(TaskSet):
         data = {
             "points": self.points,
             "out_arrays": ["times"],
-            "profile": "car"
+            "profile": "hike"
         }
 
         with self.client.post(path, catch_response=True, json=data) as response:
